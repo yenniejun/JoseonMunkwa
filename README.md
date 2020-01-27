@@ -46,7 +46,7 @@ This is the data schema for the final merged master table.
 | chi_name| Hanja | Exam-taker's name in Chinese characters |
 | kor_name | Korean | Exam-taker's name in Korean characters |
 | birth | Year | The year the person was born |
-| death | Year | The year the person was born
+| death | Year | The year the person was born |
 | bid| URL | unique URL for each person from the Lee table |
 | bpid | Code | unique code for each person from the Lee table | 
 | id1 | Integer | Id from the WS table |
