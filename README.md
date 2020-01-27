@@ -39,6 +39,7 @@ Steps I took:
 This is the data schema for the final merged master table. 
 
 (Note: I am not including all of the columns of the dataframe. There are too many, so I am only including the most important ones)
+
 |name  | type | notes|
 |------|-----|--------|
 | uuid| UUID | unique UUID for each entry in the merged table |
