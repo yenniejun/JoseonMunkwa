@@ -78,3 +78,9 @@ Connecting Joseon Munkwa (문과) and Sillok (실록)
 
 ## Joseon Official Position Dictionary (조선시대 관직 서전 만들기)
 
+
+# Data
+Our data hierarchy is as follows:
+* raw - the raw data files
+* preprocessing - fixing types/nulls/spellings, fixing encodings, fixing spellings
+* linkage - linking the different files, adding columns, processing
