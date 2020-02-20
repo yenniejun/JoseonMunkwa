@@ -107,9 +107,9 @@ Our data hierarchy is as follows:
   * sillok.csv: 국사편찬위원회 조선왕조실록 원문파일(한문) + 웹페이지(한글번역) (링크: http://sillok.history.go.kr/main/main.do, created by dhchoi)
   * sillok_name.csv: sillok.csv에서 사람 ID와 기사 ID만 떼어내서 explode. co-occurence network 또는 사람 ID의 frequency 측정용.
  * reference - 실록, 방목에서 generated data는 아니지만, 참고할 용도로 만들어진 데이터셋
-  * uci_change.csv: 한국학중앙연구원에서 만든 UCI 중 현재 ID가 변경된 UCI들.
-  * dates.csv: 음력, 양력 conversion 충돌 문제가 있기 때문에, 이 테이블을 참조해서 양력과 음력을 conversion. rdate는 조선왕조 개국을 0일로 하고 1일씩 더한 데이터.
-  * gwanjik.csv: 관직사전. 참조링크:http://ryu-nakbong.kr/xe/nakbong/clanlibrary/chosunofficials_2.htm
+   * uci_change.csv: 한국학중앙연구원에서 만든 UCI 중 현재 ID가 변경된 UCI들.
+   * dates.csv: 음력, 양력 conversion 충돌 문제가 있기 때문에, 이 테이블을 참조해서 양력과 음력을 conversion. rdate는 조선왕조 개국을 0일로 하고 1일씩 더한 데이터.
+   * gwanjik.csv: 관직사전. 참조링크:http://ryu-nakbong.kr/xe/nakbong/clanlibrary/chosunofficials_2.htm
 * linkage - linking the different files, adding columns, processing
 
 
