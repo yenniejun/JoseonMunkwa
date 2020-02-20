@@ -90,26 +90,26 @@ Our data hierarchy is as follows:
  * WS_Munkwa.csv - Wagner-Song Munkwa data
 
 * preprocessing - fixing types/nulls/spellings, fixing encodings, fixing spellings
- * records.xlsx: (A)를 preprocessing. 
-  * column 이름 변경해야 함.
-  * 필요 없는 column 제거해야 함. 
- * figures.xlsx: (B)를 preprocessing.
-  * 한자 유니코드 문제 (해결 중)
-  * column 이름 변경해야 함.
-  * 필요 없는 column 제거해야 함.
- * bangmok: 한국학 중앙연구원 방목 데이터 (링크:http://people.aks.ac.kr/index.aks) -- (C)
-  * bangmok_person: 사람을 entity로 두고 표현할 수 있는 정보들 - bpid, chnname, korname, birth, death, plastic
-  * bangmok: 과거 시험 기록을 entity로 두고 표현할 수 있는 정보들 - affilliation, rank, competitors, exam_type, pass_year, king, lid, previous, exam_class, class_rank, pass_date
-  * bangmok_career: bangmok의 전력(previous job)만 따로 뗀 정보
-  * bangmok_family: bangmok_person의 가족을 분리한 정보
- * Merged_Munkwa.csv: (C)를 하나로 합친 데이터
- * Lee_Munkwa.csv: ?? <- Yennie 작성
- * sillok.csv: 국사편찬위원회 조선왕조실록 원문파일(한문) + 웹페이지(한글번역) (링크: http://sillok.history.go.kr/main/main.do, created by dhchoi)
- * sillok_name.csv: sillok.csv에서 사람 ID와 기사 ID만 떼어내서 explode. co-occurence network 또는 사람 ID의 frequency 측정용.
-* reference - 실록, 방목에서 generated data는 아니지만, 참고할 용도로 만들어진 데이터셋
- * uci_change.csv: 한국학중앙연구원에서 만든 UCI 중 현재 ID가 변경된 UCI들.
- * dates.csv: 음력, 양력 conversion 충돌 문제가 있기 때문에, 이 테이블을 참조해서 양력과 음력을 conversion. rdate는 조선왕조 개국을 0일로 하고 1일씩 더한 데이터.
- * gwanjik.csv: 관직사전. 참조링크:http://ryu-nakbong.kr/xe/nakbong/clanlibrary/chosunofficials_2.htm
+  * records.xlsx: (A)를 preprocessing. 
+   * column 이름 변경해야 함.
+   * 필요 없는 column 제거해야 함. 
+  * figures.xlsx: (B)를 preprocessing.
+   * 한자 유니코드 문제 (해결 중)
+   * column 이름 변경해야 함.
+   * 필요 없는 column 제거해야 함.
+  * bangmok: 한국학 중앙연구원 방목 데이터 (링크:http://people.aks.ac.kr/index.aks) -- (C)
+   * bangmok_person: 사람을 entity로 두고 표현할 수 있는 정보들 - bpid, chnname, korname, birth, death, plastic
+   * bangmok: 과거 시험 기록을 entity로 두고 표현할 수 있는 정보들 - affilliation, rank, competitors, exam_type, pass_year, king, lid, previous, exam_class, class_rank, pass_date
+   * bangmok_career: bangmok의 전력(previous job)만 따로 뗀 정보
+   * bangmok_family: bangmok_person의 가족을 분리한 정보
+  * Merged_Munkwa.csv: (C)를 하나로 합친 데이터
+  * Lee_Munkwa.csv: ?? <- Yennie 작성
+  * sillok.csv: 국사편찬위원회 조선왕조실록 원문파일(한문) + 웹페이지(한글번역) (링크: http://sillok.history.go.kr/main/main.do, created by dhchoi)
+  * sillok_name.csv: sillok.csv에서 사람 ID와 기사 ID만 떼어내서 explode. co-occurence network 또는 사람 ID의 frequency 측정용.
+ * reference - 실록, 방목에서 generated data는 아니지만, 참고할 용도로 만들어진 데이터셋
+  * uci_change.csv: 한국학중앙연구원에서 만든 UCI 중 현재 ID가 변경된 UCI들.
+  * dates.csv: 음력, 양력 conversion 충돌 문제가 있기 때문에, 이 테이블을 참조해서 양력과 음력을 conversion. rdate는 조선왕조 개국을 0일로 하고 1일씩 더한 데이터.
+  * gwanjik.csv: 관직사전. 참조링크:http://ryu-nakbong.kr/xe/nakbong/clanlibrary/chosunofficials_2.htm
 * linkage - linking the different files, adding columns, processing
 
 
