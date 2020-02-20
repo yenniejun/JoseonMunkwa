@@ -82,26 +82,26 @@ Connecting Joseon Munkwa (문과) and Sillok (실록)
 # Data
 Our data hierarchy is as follows:
 * raw - the raw data files
- * nikh - 국사편찬위원회 실록 부가열람 자료 (링크:https://www.data.go.kr/dataset/3071310/fileData.do), 마지막 수정일:2019년 9월 5일
-  * 관직 데이터: 관료들의 관력(career records)  -- (A)
-  * 인물 데이터: 인물의 생년, 졸년, 본관 등 -- (B)
-  * 선원계보 데이터: 왕실 인물 데이터
- * lnis, lnis_person - 만성대동보 자료에 기반한 조선시대 친족관계망정보시스템(링크:lnis.kr)
- * WS_Munkwa.csv - Wagner-Song Munkwa data
+  * nikh - 국사편찬위원회 실록 부가열람 자료 (링크:https://www.data.go.kr/dataset/3071310/fileData.do), 마지막 수정일:2019년 9월 5일
+   * 관직 데이터: 관료들의 관력(career records)  -- (A)
+   * 인물 데이터: 인물의 생년, 졸년, 본관 등 -- (B)
+   * 선원계보 데이터: 왕실 인물 데이터
+  * lnis, lnis_person - 만성대동보 자료에 기반한 조선시대 친족관계망정보시스템(링크:lnis.kr)
+  * WS_Munkwa.csv - Wagner-Song Munkwa data
 
 * preprocessing - fixing types/nulls/spellings, fixing encodings, fixing spellings
   * records.xlsx: (A)를 preprocessing. 
-   * column 이름 변경해야 함.
-   * 필요 없는 column 제거해야 함. 
+    * column 이름 변경해야 함.
+    * 필요 없는 column 제거해야 함. 
   * figures.xlsx: (B)를 preprocessing.
-   * 한자 유니코드 문제 (해결 중)
-   * column 이름 변경해야 함.
-   * 필요 없는 column 제거해야 함.
+    * 한자 유니코드 문제 (해결 중)
+    * column 이름 변경해야 함.
+    * 필요 없는 column 제거해야 함.
   * bangmok: 한국학 중앙연구원 방목 데이터 (링크:http://people.aks.ac.kr/index.aks) -- (C)
-   * bangmok_person: 사람을 entity로 두고 표현할 수 있는 정보들 - bpid, chnname, korname, birth, death, plastic
-   * bangmok: 과거 시험 기록을 entity로 두고 표현할 수 있는 정보들 - affilliation, rank, competitors, exam_type, pass_year, king, lid, previous, exam_class, class_rank, pass_date
-   * bangmok_career: bangmok의 전력(previous job)만 따로 뗀 정보
-   * bangmok_family: bangmok_person의 가족을 분리한 정보
+    * bangmok_person: 사람을 entity로 두고 표현할 수 있는 정보들 - bpid, chnname, korname, birth, death, plastic
+    * bangmok: 과거 시험 기록을 entity로 두고 표현할 수 있는 정보들 - affilliation, rank, competitors, exam_type, pass_year, king, lid, previous, exam_class, class_rank, pass_date
+    * bangmok_career: bangmok의 전력(previous job)만 따로 뗀 정보
+    * bangmok_family: bangmok_person의 가족을 분리한 정보
   * Merged_Munkwa.csv: (C)를 하나로 합친 데이터
   * Lee_Munkwa.csv: ?? <- Yennie 작성
   * sillok.csv: 국사편찬위원회 조선왕조실록 원문파일(한문) + 웹페이지(한글번역) (링크: http://sillok.history.go.kr/main/main.do, created by dhchoi)
