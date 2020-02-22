@@ -86,9 +86,11 @@ Our data hierarchy is as follows:
         * `bangmok_career.csv`: the career entity (bangmok의 전력(previous job)만 따로 뗀 정보)
         * `bangmok_family.csv`: the family entity (family members related to the bangmok_person)
         * `bangmok.csv`: the exam entity (affilliation, rank, competitors, exam_type, pass_year, king, lid, previous, exam_class, class_rank, pass_date)
-      * `Merged_Munkwa.csv`: merging matching people from `bangmok` and `WS_Munkwa.csv`
-      * `sillok.csv`: Original Sillok file from 국사편찬위원회 with original Hanja text ([Source](http://sillok.history.go.kr/main/main.do)) and Korean translation (crawled from the webpage, created by @dhchoi)
-      * `sillok_name.csv`: the name ID (이름) and recorder ID (기사) extracted from `sillok.csv`. We will need to use co-corruence network or person_id frequency 
+    * `Merged_Munkwa.csv`: merging matching people from `bangmok` and `WS_Munkwa.csv`
+    * `sillok.csv`: Original Sillok file from 국사편찬위원회 with original Hanja text ([Source](http://sillok.history.go.kr/main/main.do)) and Korean translation (crawled from the webpage, created by @dhchoi)
+    * `sillok_name.csv`: the name ID (이름) and recorder ID (기사) extracted from `sillok.csv`. We will need to use co-corruence network or person_id frequency 
+    * `munkwa_ws_uuid_dict.csv`: Mapping of `lee_uuid` in `Merged_Munkwa` to the `bpid` in `bangmok`
+    * `munkwa_lee_uuid_dict.csv`: Mapping of `ws_uuid` in `Merged_Munkwa` to the `id1` in `WS_Munkwa.csv`
 
  * `reference`: Not necessarily data generated directly from Sillok or Bangmok, but data created to help with analysis and processing 
     * `uci_change.csv`: Mapping of UCI Ids (한국학중앙연구원에서 만든 UCI 중 현재 ID가 변경된 UCI들)
