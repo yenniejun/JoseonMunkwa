@@ -57,8 +57,7 @@ For each `spid` and `sid` pair in `to_split`, determine the "official name", whi
 <img src="./img/sillok_person.png" alt="alt text" height="200">
 
 Compare the `unique_names` in `unique_names_for_spid` with the "official name". If the "official name" appears in the list of `unique_names`, this means that this record does indeed reference the "official name" (because if the name is an alias, it will always occur in tandem with a full name). If the name does not equal the full name or the first name, then it is a wrong name, and goes inside `split_people`. For those distinct "split people", I generate a new temporary `spid`, which is the same as the old spid, except starting with a `T` instead of with an `M`.
- 
-<img src="./img/split_people.png" alt="alt text" height="300">
+
 
 We have also calculated an `alpha` value - this takes the average of the `new_years` (the years associated with the split person's name) and the averag of the `old_years` (the years associated with the official name) and finds the difference. The bigger the `alpha`, the more distinct the two sets of years. A histogram of the alphas look like this. We could make the hypothesis that smaller alphas yield typos or misspellings (i.e. the two sets of years are very close and overlap) and that larger alphas may actually yield two distinct people grouped under the same ID.
 
@@ -67,10 +66,14 @@ We have also calculated an `alpha` value - this takes the average of the `new_ye
 <img src="./img/alpha_spread_describe.png" alt="alt text" height="200">
 
 
-We can also draw a scatterplot of these two groupings of years to see how distinct they are.
-Here is an excerpt; the full PDF can be found at 'img/split_people_years.pdf'
+Here are the split people with the top alpha values. As you can see, there are several cases where people with similar names were grouped together even though they were different people. Example: '金思䄷' and '金思' are different people, but they were tagged with the same `spid`.	
+<img src="./img/split_people.png" alt="alt text" height="350">
 
-We can see four different cases:
+
+We can also draw a scatterplot of these two groupings of years to see how distinct they are.
+Here is an excerpt; the full PDF can be found [here](https://github.com/yenniejun/JoseonMunkwa/blob/master/img/split_people_years.pdf) or under'img/split_people_years.pdf'.
+
+We can see three different cases:
 
 1. Perhaps one misspelling, stuck in the middle of a lot of other records ... Could be a different person but is more likely that it is a misspelling
 
