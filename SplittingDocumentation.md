@@ -67,7 +67,7 @@ We have also calculated an `alpha` value - this takes the average of the `new_ye
 
 
 Here are the split people with the top alpha values. As you can see, there are several cases where people with similar names were grouped together even though they were different people. Example: '金思䄷' and '金思' are different people, but they were tagged with the same `spid`.	
-<img src="./img/split_people.png" alt="alt text" height="350">
+<img src="./img/split_people.png" alt="alt text" height="300">
 
 
 We can also draw a scatterplot of these two groupings of years to see how distinct they are.
