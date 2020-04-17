@@ -43,6 +43,9 @@ In the Sillok, officials' names are mentioned many times with unique IDs associa
 | 동명이인 (同名異人)  | Same name, different person: This is when there are two people in the Sillok with the same name but are in actuality different people |
 | 이명동인 (異名同人)  | Different name, same person: This is when there are two people in the SIllok with different names but are in actuality the same person |
 
+### Splitting
+Documentation for splitting can be found [here](https://github.com/yenniejun/JoseonMunkwa/blob/master/SplittingDocumentation.md), or under 'JoseonMunkwa/SplittingDocumentation.md'.
+
 
 ## 3. Record Linkage
 Our goal is to connect the names of the officials mentioned in the Bangmok (문과 방목) with the officials mentioned in the Sillok (조선왕조실록). 
